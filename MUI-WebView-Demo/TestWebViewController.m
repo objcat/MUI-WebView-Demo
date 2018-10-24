@@ -7,16 +7,11 @@
 //
 
 #import "TestWebViewController.h"
-
-#import "PDRToolSystem.h"
-#import "PDRToolSystemEx.h"
 #import "PDRCoreAppFrame.h"
 #import "PDRCoreAppManager.h"
-#import "PDRCoreAppWindow.h"
-#import "PDRCoreAppInfo.h"
 
 @interface TestWebViewController ()
-@property (strong, nonatomic) PDRCoreAppFrame *contentView;
+@property (strong, nonatomic) PDRCoreAppFrame *appFrame;
 @end
 
 @implementation TestWebViewController
@@ -29,14 +24,14 @@
     if (pCoreHandle) {
         NSString *pFilePath = [NSString stringWithFormat:@"file://%@/%@", [NSBundle mainBundle].bundlePath, @"Pandora/apps/HelloH5/www/plugin.html"];
         [pCoreHandle start];
-        self.contentView = [[PDRCoreAppFrame alloc] initWithName:@"WebViewID1" loadURL:pFilePath frame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];
+        self.appFrame = [[PDRCoreAppFrame alloc] initWithName:@"WebViewID1" loadURL:pFilePath frame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];
         if (TARGET_IPHONE_SIMULATOR) {
-            self.contentView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+            self.appFrame.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
         }
-        if (self.contentView) {
-            [pCoreHandle.appManager.activeApp.appWindow registerFrame:self.contentView];
+        if (self.appFrame) {
+            [pCoreHandle.appManager.activeApp.appWindow registerFrame:self.appFrame];
             [pCoreHandle regPluginWithName:@"plugintest" impClassName:@"PGPluginTest" type:PDRExendPluginTypeFrame javaScript:nil];
-            [self.view addSubview:self.contentView];
+            [self.view addSubview:self.appFrame];
         }
     }
     
