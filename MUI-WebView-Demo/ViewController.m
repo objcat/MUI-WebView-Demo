@@ -38,6 +38,8 @@
     
     [self addRow:@"基本交互" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plugin.html"]];
     [self addRow:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"]];
+    [self addRow:@"获取设备信息" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/device.html"]];
+    [self addRow:@"文件系统" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/file.html"]];
 }
 
 - (void)addRow:(NSString *)title url:(NSString *)url {
