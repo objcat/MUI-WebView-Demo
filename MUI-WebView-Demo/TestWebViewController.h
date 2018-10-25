@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestWebViewController : UIViewController
-
+- (instancetype)initWithTitle:(NSString *)title URL:(NSString *)URL;
 @end
 
 NS_ASSUME_NONNULL_END

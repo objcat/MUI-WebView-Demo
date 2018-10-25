@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2232BBCD2180552E003EFD77 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBCC2180552D003EFD77 /* AVFoundation.framework */; };
+		2232BBCF21815628003EFD77 /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22907A7C2180478900956980 /* liblibPGInvocation.a */; };
+		2232BBD221815628003EFD77 /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4AE6217DC071000950C5 /* liblibPDRCore.a */; };
+		2232BBD721819A15003EFD77 /* liblibCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBD621819A15003EFD77 /* liblibCamera.a */; };
+		2232BBD921819AAB003EFD77 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBD821819AAB003EFD77 /* Photos.framework */; };
+		2232BBDB21819AC3003EFD77 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBDA21819AC2003EFD77 /* CoreMedia.framework */; };
+		2232BBDD2181A4A4003EFD77 /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBDC2181A4A4003EFD77 /* libcoreSupport.a */; };
+		2232BBDF2181A4C7003EFD77 /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBDE2181A4C6003EFD77 /* liblibUI.a */; };
+		2232BBE32181A5C6003EFD77 /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232BBE22181A5C6003EFD77 /* liblibIO.a */; };
 		2289B247217EED5C00CF0138 /* Pandora in Resources */ = {isa = PBXBuildFile; fileRef = 2289B246217EED5C00CF0138 /* Pandora */; };
 		2289B2DE217EFF1400CF0138 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4B4B217EBC57000950C5 /* QuickLook.framework */; };
 		22907A64217F0A5800956980 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22907A57217F0A5700956980 /* mapapi.bundle */; };
@@ -25,17 +33,12 @@
 		22907A70217F0A5800956980 /* native-bundle-main.js in Resources */ = {isa = PBXBuildFile; fileRef = 22907A63217F0A5700956980 /* native-bundle-main.js */; };
 		22907A77217F133200956980 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4B50217EBC84000950C5 /* StoreKit.framework */; };
 		22907A7B217F1C8000956980 /* PluginTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22907A79217F1C8000956980 /* PluginTest.m */; };
-		22907A7D2180478900956980 /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22907A7C2180478900956980 /* liblibPGInvocation.a */; };
 		22AD4ACF217DC025000950C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AD4ACE217DC025000950C5 /* AppDelegate.m */; };
 		22AD4AD2217DC025000950C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AD4AD1217DC025000950C5 /* ViewController.m */; };
 		22AD4AD5217DC025000950C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AD4AD3217DC025000950C5 /* Main.storyboard */; };
 		22AD4AD7217DC026000950C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AD4AD6217DC026000950C5 /* Assets.xcassets */; };
 		22AD4ADA217DC026000950C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AD4AD8217DC026000950C5 /* LaunchScreen.storyboard */; };
 		22AD4ADD217DC026000950C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AD4ADC217DC026000950C5 /* main.m */; };
-		22AD4AE7217DC071000950C5 /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4AE3217DC070000950C5 /* libcoreSupport.a */; };
-		22AD4AE8217DC071000950C5 /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4AE4217DC070000950C5 /* liblibNavigator.a */; };
-		22AD4AE9217DC071000950C5 /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4AE5217DC071000950C5 /* liblibUI.a */; };
-		22AD4AEA217DC071000950C5 /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4AE6217DC071000950C5 /* liblibPDRCore.a */; };
 		22AD4AFF217DC078000950C5 /* native-bundle-main.js in Resources */ = {isa = PBXBuildFile; fileRef = 22AD4AFD217DC078000950C5 /* native-bundle-main.js */; };
 		22AD4B2E217EADDB000950C5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4B2D217EADDB000950C5 /* MediaPlayer.framework */; };
 		22AD4B31217EAF72000950C5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD4B01217DC250000950C5 /* WebKit.framework */; };
@@ -53,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		2232BBCC2180552D003EFD77 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2232BBD621819A15003EFD77 /* liblibCamera.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibCamera.a; sourceTree = "<group>"; };
+		2232BBD821819AAB003EFD77 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		2232BBDA21819AC2003EFD77 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2232BBDC2181A4A4003EFD77 /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
+		2232BBDE2181A4C6003EFD77 /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
+		2232BBE22181A5C6003EFD77 /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibIO.a; sourceTree = "<group>"; };
 		2289B246217EED5C00CF0138 /* Pandora */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pandora; sourceTree = "<group>"; };
 		22907A57217F0A5700956980 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		22907A58217F0A5700956980 /* MiPassport.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MiPassport.bundle; sourceTree = "<group>"; };
@@ -80,9 +89,6 @@
 		22AD4AD9217DC026000950C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22AD4ADB217DC026000950C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22AD4ADC217DC026000950C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22AD4AE3217DC070000950C5 /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
-		22AD4AE4217DC070000950C5 /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNavigator.a; sourceTree = "<group>"; };
-		22AD4AE5217DC071000950C5 /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
 		22AD4AE6217DC071000950C5 /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
 		22AD4AEC217DC078000950C5 /* PDRCoreAppWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppWindow.h; sourceTree = "<group>"; };
 		22AD4AED217DC078000950C5 /* PDRNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRNView.h; sourceTree = "<group>"; };
@@ -125,31 +131,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2232BBDB21819AC3003EFD77 /* CoreMedia.framework in Frameworks */,
+				2232BBD921819AAB003EFD77 /* Photos.framework in Frameworks */,
+				2232BBD721819A15003EFD77 /* liblibCamera.a in Frameworks */,
+				2232BBCF21815628003EFD77 /* liblibPGInvocation.a in Frameworks */,
+				2232BBD221815628003EFD77 /* liblibPDRCore.a in Frameworks */,
 				2232BBCD2180552E003EFD77 /* AVFoundation.framework in Frameworks */,
-				22907A7D2180478900956980 /* liblibPGInvocation.a in Frameworks */,
 				22907A77217F133200956980 /* StoreKit.framework in Frameworks */,
+				2232BBDF2181A4C7003EFD77 /* liblibUI.a in Frameworks */,
 				2289B2DE217EFF1400CF0138 /* QuickLook.framework in Frameworks */,
 				22AD4B63217EBE10000950C5 /* libc++.tbd in Frameworks */,
+				2232BBDD2181A4A4003EFD77 /* libcoreSupport.a in Frameworks */,
 				22AD4B56217EBCD7000950C5 /* AssetsLibrary.framework in Frameworks */,
 				22AD4B54217EBCC8000950C5 /* AddressBook.framework in Frameworks */,
 				22AD4B53217EBCB9000950C5 /* CoreLocation.framework in Frameworks */,
 				22AD4B4F217EBC6B000950C5 /* JavaScriptCore.framework in Frameworks */,
+				2232BBE32181A5C6003EFD77 /* liblibIO.a in Frameworks */,
 				22AD4B47217EBB94000950C5 /* AudioToolbox.framework in Frameworks */,
 				22AD4B42217EBB5A000950C5 /* CoreTelephony.framework in Frameworks */,
 				22AD4B40217EBB3B000950C5 /* MobileCoreServices.framework in Frameworks */,
 				22AD4B39217EBA8A000950C5 /* SystemConfiguration.framework in Frameworks */,
 				22AD4B31217EAF72000950C5 /* WebKit.framework in Frameworks */,
 				22AD4B2E217EADDB000950C5 /* MediaPlayer.framework in Frameworks */,
-				22AD4AE7217DC071000950C5 /* libcoreSupport.a in Frameworks */,
-				22AD4AE9217DC071000950C5 /* liblibUI.a in Frameworks */,
-				22AD4AE8217DC071000950C5 /* liblibNavigator.a in Frameworks */,
-				22AD4AEA217DC071000950C5 /* liblibPDRCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2232BBCE218155D3003EFD77 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2232BBE22181A5C6003EFD77 /* liblibIO.a */,
+				2232BBDE2181A4C6003EFD77 /* liblibUI.a */,
+				2232BBDC2181A4A4003EFD77 /* libcoreSupport.a */,
+				2232BBD621819A15003EFD77 /* liblibCamera.a */,
+				22907A7C2180478900956980 /* liblibPGInvocation.a */,
+				22AD4AE6217DC071000950C5 /* liblibPDRCore.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2232BBD421815652003EFD77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22AD4ACD217DC025000950C5 /* AppDelegate.h */,
+				22AD4ACE217DC025000950C5 /* AppDelegate.m */,
+				22AD4AD3217DC025000950C5 /* Main.storyboard */,
+				22AD4AD6217DC026000950C5 /* Assets.xcassets */,
+				22AD4AD8217DC026000950C5 /* LaunchScreen.storyboard */,
+				22AD4ADB217DC026000950C5 /* Info.plist */,
+				22AD4ADC217DC026000950C5 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		22907A56217F0A5700956980 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +209,7 @@
 		22AD4AC1217DC025000950C5 = {
 			isa = PBXGroup;
 			children = (
+				2232BBCE218155D3003EFD77 /* lib */,
 				22AD4ACC217DC025000950C5 /* MUI-WebView-Demo */,
 				22AD4ACB217DC025000950C5 /* Products */,
 				22AD4B00217DC250000950C5 /* Frameworks */,
@@ -190,22 +227,16 @@
 		22AD4ACC217DC025000950C5 /* MUI-WebView-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				22907A56217F0A5700956980 /* Bundles */,
-				2289B246217EED5C00CF0138 /* Pandora */,
-				22AD4AEB217DC078000950C5 /* inc */,
-				22AD4ACD217DC025000950C5 /* AppDelegate.h */,
-				22AD4ACE217DC025000950C5 /* AppDelegate.m */,
-				22AD4AD0217DC025000950C5 /* ViewController.h */,
-				22AD4AD1217DC025000950C5 /* ViewController.m */,
-				22AD4AD3217DC025000950C5 /* Main.storyboard */,
-				22AD4AD6217DC026000950C5 /* Assets.xcassets */,
-				22AD4AD8217DC026000950C5 /* LaunchScreen.storyboard */,
-				22AD4ADB217DC026000950C5 /* Info.plist */,
-				22AD4ADC217DC026000950C5 /* main.m */,
 				22AD4B65217ECA8A000950C5 /* TestWebViewController.h */,
 				22AD4B66217ECA8A000950C5 /* TestWebViewController.m */,
 				22907A7A217F1C8000956980 /* PluginTest.h */,
 				22907A79217F1C8000956980 /* PluginTest.m */,
+				22AD4AD0217DC025000950C5 /* ViewController.h */,
+				22AD4AD1217DC025000950C5 /* ViewController.m */,
+				2232BBD421815652003EFD77 /* Supporting Files */,
+				22907A56217F0A5700956980 /* Bundles */,
+				2289B246217EED5C00CF0138 /* Pandora */,
+				22AD4AEB217DC078000950C5 /* inc */,
 			);
 			path = "MUI-WebView-Demo";
 			sourceTree = "<group>";
@@ -239,12 +270,9 @@
 		22AD4B00217DC250000950C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2232BBDA21819AC2003EFD77 /* CoreMedia.framework */,
+				2232BBD821819AAB003EFD77 /* Photos.framework */,
 				2232BBCC2180552D003EFD77 /* AVFoundation.framework */,
-				22907A7C2180478900956980 /* liblibPGInvocation.a */,
-				22AD4AE3217DC070000950C5 /* libcoreSupport.a */,
-				22AD4AE4217DC070000950C5 /* liblibNavigator.a */,
-				22AD4AE6217DC071000950C5 /* liblibPDRCore.a */,
-				22AD4AE5217DC071000950C5 /* liblibUI.a */,
 				22AD4B62217EBE10000950C5 /* libc++.tbd */,
 				22AD4B55217EBCD7000950C5 /* AssetsLibrary.framework */,
 				22AD4B50217EBC84000950C5 /* StoreKit.framework */,
@@ -497,8 +525,8 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PZXD4J23YL;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "MUI-WebView-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = "$(SRCROOT)/MUI-WebView-Demo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +535,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MUI-WebView-Demo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
@@ -524,8 +553,8 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PZXD4J23YL;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "MUI-WebView-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = "$(SRCROOT)/MUI-WebView-Demo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,6 +563,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MUI-WebView-Demo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
