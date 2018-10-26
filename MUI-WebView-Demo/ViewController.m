@@ -25,7 +25,7 @@
     [self createTableView];
     [self addRow];
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"demo中导入动态库均基于基础库 所以请先集成基础库!!!" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"1.demo中使用的功能均基于基础库 所以请先集成基础库!!!\n2.demo并不是专为webview模式来写的 所以有部分跳转是无法使用的\n3.demo还处于开发阶段 功能并不全 请见谅" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *determin = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
     [alert addAction:determin];
     [self presentViewController:alert animated:YES completion:nil];
@@ -41,7 +41,7 @@
     
     [self addRowWithTitle:@"音频录制/播放" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/audio.html"] staticLib:@[@"liblibMedia.a", @"libopencore-amrnb.a", @"libmp3lame.a", @"liblibIO.a"] systemLib:@[@"AVFoundation.framework"]];
     
-    [self addRowWithTitle:@"二维码扫描" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/barcode.html"] staticLib:@[@"liblibBarcode.a", @"liblibNativeUI.a"] systemLib:@[@"AVFoundation.framework", @"CoreMedia.framework"]];
+    [self addRowWithTitle:@"二维码扫描" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/barcode_scan.html"] staticLib:@[@"liblibBarcode.a", @"liblibNativeUI.a"] systemLib:@[@"AVFoundation.framework", @"CoreMedia.framework"]];
     
     [self addRowWithTitle:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
     
@@ -56,26 +56,47 @@
     [self addRowWithTitle:@"系统相册" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/gallery.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
     
     [self addRowWithTitle:@"地理定位" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/geolocation.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"地图" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/maps.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"消息通讯" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/message.html"] staticLib:@[@"liblibMessage.a"] systemLib:@[@"MessageUI.framework"]];
+    
     [self addRowWithTitle:@"原生对象" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeobj.html"] staticLib:@[@"liblibNativeUI.a"] systemLib:@[]];
+    
     [self addRowWithTitle:@"原生界面" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeui.html"] staticLib:@[@"liblibNativeUI.a"] systemLib:@[]];
+    
     [self addRowWithTitle:@"浏览器环境" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/navigator.html"] staticLib:@[@"liblibNavigator.a"] systemLib:@[@"AddressBook.framework", @"CoreLocation.framework", @"AssetsLibrary.framework", @"AVFoundation.framework"]];
+    
     [self addRowWithTitle:@"授权登陆认证" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/oauth.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"方向传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/orientation.html"] staticLib:@[@"liblibNativeUI.a", @"liblibOrientation.a"] systemLib:@[@"CoreLocation.framework"]];
+    
     [self addRowWithTitle:@"支付" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/payment.html"] staticLib:@[@"liblibNativeUI.a", @"libalixpayment.a", @"liblibPayment.a", @"AlipaySDK.framework"] systemLib:@[@"CoreMotion.framework"]];
+    
     [self addRowWithTitle:@"距离传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/proximity.html"] staticLib:@[@"liblibPGProximity.a"] systemLib:@[@"基础库"]];
+    
     [self addRowWithTitle:@"消息推送" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/push.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"运行环境" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/runtime.html"] staticLib:@[] systemLib:@[@"基础库"]];
+    
     [self addRowWithTitle:@"分享" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/share.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"语音识别" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/speech.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"统计管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/statistic.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"本地数据存储" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/storage.html"] staticLib:@[@"liblibStorage.a", @"storage.framework"] systemLib:@[]];
+    
     [self addRowWithTitle:@"上传管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/uploader.html"] staticLib:@[@"liblibNativeUI.a", @"liblibStorage.a", @"liblibCamera.a", @"storage.framework", @"CoreLocation.framework", @"Photos.framework", @"AssetsLibrary.framework", @"AVFoundation.framework"] systemLib:@[@"CoreMedia.framework"]];
+    
     [self addRowWithTitle:@"视频多媒体" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/video.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"窗口管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/webview.html"] staticLib:@[] systemLib:@[]];
+    
     [self addRowWithTitle:@"跨域请求" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/xhr.html"] staticLib:@[@"liblibXHR.a"] systemLib:@[]];
+    
     [self addRowWithTitle:@"文件压缩解压" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/zip.html"] staticLib:@[@"liblibZip.a", @"liblibIO.a", @"liblibNativeUI.a"] systemLib:@[@"基础库"]];
+    
     [self addRowWithTitle:@"JS调用原生代码" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/njs.html"] staticLib:@[] systemLib:@[@"基础库"]];
 }
 
