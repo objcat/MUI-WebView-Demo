@@ -133,8 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B5FF992182E2B900AFA24B /* liblibPGInvocation.a in Frameworks */,
-				22B5FF9A2182E2B900AFA24B /* liblibUI.a in Frameworks */,
 				22AD4B63217EBE10000950C5 /* libc++.tbd in Frameworks */,
 				22907A77217F133200956980 /* StoreKit.framework in Frameworks */,
 				2289B2DE217EFF1400CF0138 /* QuickLook.framework in Frameworks */,
@@ -143,8 +141,10 @@
 				22AD4B40217EBB3B000950C5 /* MobileCoreServices.framework in Frameworks */,
 				22AD4B4F217EBC6B000950C5 /* JavaScriptCore.framework in Frameworks */,
 				22AD4B2E217EADDB000950C5 /* MediaPlayer.framework in Frameworks */,
-				22B5FF9B2182E2B900AFA24B /* libcoreSupport.a in Frameworks */,
 				22AD4B31217EAF72000950C5 /* WebKit.framework in Frameworks */,
+				22B5FF992182E2B900AFA24B /* liblibPGInvocation.a in Frameworks */,
+				22B5FF9A2182E2B900AFA24B /* liblibUI.a in Frameworks */,
+				22B5FF9B2182E2B900AFA24B /* libcoreSupport.a in Frameworks */,
 				22B5FF982182E2B900AFA24B /* liblibPDRCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				22B5FF8B2182E26A00AFA24B /* 基本交互 */,
-				22B5FF9C2182E2BD00AFA24B /* 加速度传感器 */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -282,13 +281,6 @@
 				22B5FF962182E2B900AFA24B /* liblibUI.a */,
 			);
 			path = "基本交互";
-			sourceTree = "<group>";
-		};
-		22B5FF9C2182E2BD00AFA24B /* 加速度传感器 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "加速度传感器";
 			sourceTree = "<group>";
 		};
 		22B5FF9D2182E55C00AFA24B /* UI */ = {
@@ -566,6 +558,10 @@
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/lib/基本交互",
 					"$(PROJECT_DIR)/lib/1.基本交互",
+					"$(PROJECT_DIR)/lib/加速度传感器",
+					"$(PROJECT_DIR)/lib/音频录制-播放",
+					"$(PROJECT_DIR)/lib/二维码扫描",
+					"$(PROJECT_DIR)/lib/拍照-录像",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
@@ -596,6 +592,10 @@
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/lib/基本交互",
 					"$(PROJECT_DIR)/lib/1.基本交互",
+					"$(PROJECT_DIR)/lib/加速度传感器",
+					"$(PROJECT_DIR)/lib/音频录制-播放",
+					"$(PROJECT_DIR)/lib/二维码扫描",
+					"$(PROJECT_DIR)/lib/拍照-录像",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;

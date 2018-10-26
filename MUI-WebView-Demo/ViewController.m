@@ -24,21 +24,26 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self createTableView];
     [self addRow];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"demo中导入动态库均基于基础库 所以请先集成基础库!!!" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *determin = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+    [alert addAction:determin];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)addRow {
     
      NSString *path = [[NSBundle mainBundle] bundlePath];
     
-    [self addRowWithTitle:@"基本交互" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plugin.html"] staticLib:@[@"liblibPDRCore.a", @"libcoreSupport.a", @"liblibUI.a", @"liblibPGInvocation.a"] systemLib:@[@"libc++.tbd", @"StoreKit.framework", @"QuickLook.framework", @"AudioToolbox.framework", @"CoreTelephony.framework", @"MobileCoreServices.framework", @"JavaScriptCore.framework", @"MediaPlayer.framework", @"WebKit.framework"]];
+    [self addRowWithTitle:@"基础库 - 开始集成" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plugin.html"] staticLib:@[@"liblibPDRCore.a", @"libcoreSupport.a", @"liblibUI.a", @"liblibPGInvocation.a"] systemLib:@[@"libc++.tbd", @"StoreKit.framework", @"QuickLook.framework", @"AudioToolbox.framework", @"CoreTelephony.framework", @"MobileCoreServices.framework", @"JavaScriptCore.framework", @"MediaPlayer.framework", @"WebKit.framework"]];
     
-    [self addRowWithTitle:@"加速度传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/accelerometer.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"加速度传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/accelerometer.html"] staticLib:@[@"liblibAccelerometer.a"] systemLib:@[]];
     
-    [self addRowWithTitle:@"音频录制/播放" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/audio.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"音频录制/播放" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/audio.html"] staticLib:@[@"liblibMedia.a", @"libopencore-amrnb.a", @"libmp3lame.a", @"liblibIO.a"] systemLib:@[@"AVFoundation.framework"]];
     
-    [self addRowWithTitle:@"二维码扫描" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/barcode_scan.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"二维码扫描" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/barcode.html"] staticLib:@[@"liblibBarcode.a", @"liblibNativeUI.a"] systemLib:@[@"AVFoundation.framework", @"CoreMedia.framework"]];
     
-    [self addRowWithTitle:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
     
     [self addRowWithTitle:@"获取设备信息" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/device.html"] staticLib:@[] systemLib:@[]];
     
@@ -94,6 +99,10 @@
     model.staticLib = staticLib;
     model.systemLib = systemLib;
     [self.arr addObject:model];
+    
+    if (model == self.arr[0]) {
+        model.open = YES;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
