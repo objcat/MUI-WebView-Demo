@@ -47,10 +47,10 @@
 		22B5FF492182C25D00AFA24B /* RowOpenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B5FF472182C25D00AFA24B /* RowOpenTableViewCell.xib */; };
 		22B5FF4B2182D3CB00AFA24B /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B5FF4A2182D3CB00AFA24B /* up.png */; };
 		22B5FF4E2182D5F300AFA24B /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B5FF4D2182D5F300AFA24B /* BaseTableViewCell.m */; };
-		22B5FF982182E2B900AFA24B /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FF942182E2B800AFA24B /* liblibPDRCore.a */; };
-		22B5FF992182E2B900AFA24B /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FF952182E2B800AFA24B /* liblibPGInvocation.a */; };
-		22B5FF9A2182E2B900AFA24B /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FF962182E2B900AFA24B /* liblibUI.a */; };
-		22B5FF9B2182E2B900AFA24B /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FF972182E2B900AFA24B /* libcoreSupport.a */; };
+		22B5FFE92182F14600AFA24B /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE52182F14600AFA24B /* libcoreSupport.a */; };
+		22B5FFEA2182F14600AFA24B /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE62182F14600AFA24B /* liblibPDRCore.a */; };
+		22B5FFEB2182F14600AFA24B /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE72182F14600AFA24B /* liblibPGInvocation.a */; };
+		22B5FFEC2182F14600AFA24B /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE82182F14600AFA24B /* liblibUI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,10 +122,10 @@
 		22B5FF4A2182D3CB00AFA24B /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		22B5FF4C2182D5F300AFA24B /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		22B5FF4D2182D5F300AFA24B /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		22B5FF942182E2B800AFA24B /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
-		22B5FF952182E2B800AFA24B /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPGInvocation.a; sourceTree = "<group>"; };
-		22B5FF962182E2B900AFA24B /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
-		22B5FF972182E2B900AFA24B /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
+		22B5FFE52182F14600AFA24B /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
+		22B5FFE62182F14600AFA24B /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
+		22B5FFE72182F14600AFA24B /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPGInvocation.a; sourceTree = "<group>"; };
+		22B5FFE82182F14600AFA24B /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,17 +135,17 @@
 			files = (
 				22AD4B63217EBE10000950C5 /* libc++.tbd in Frameworks */,
 				22907A77217F133200956980 /* StoreKit.framework in Frameworks */,
+				22B5FFEA2182F14600AFA24B /* liblibPDRCore.a in Frameworks */,
+				22B5FFE92182F14600AFA24B /* libcoreSupport.a in Frameworks */,
 				2289B2DE217EFF1400CF0138 /* QuickLook.framework in Frameworks */,
 				22AD4B47217EBB94000950C5 /* AudioToolbox.framework in Frameworks */,
+				22B5FFEC2182F14600AFA24B /* liblibUI.a in Frameworks */,
+				22B5FFEB2182F14600AFA24B /* liblibPGInvocation.a in Frameworks */,
 				22AD4B42217EBB5A000950C5 /* CoreTelephony.framework in Frameworks */,
 				22AD4B40217EBB3B000950C5 /* MobileCoreServices.framework in Frameworks */,
 				22AD4B4F217EBC6B000950C5 /* JavaScriptCore.framework in Frameworks */,
 				22AD4B2E217EADDB000950C5 /* MediaPlayer.framework in Frameworks */,
 				22AD4B31217EAF72000950C5 /* WebKit.framework in Frameworks */,
-				22B5FF992182E2B900AFA24B /* liblibPGInvocation.a in Frameworks */,
-				22B5FF9A2182E2B900AFA24B /* liblibUI.a in Frameworks */,
-				22B5FF9B2182E2B900AFA24B /* libcoreSupport.a in Frameworks */,
-				22B5FF982182E2B900AFA24B /* liblibPDRCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +155,7 @@
 		2232BBCE218155D3003EFD77 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				22B5FF8B2182E26A00AFA24B /* 基本交互 */,
+				22B5FF8B2182E26A00AFA24B /* 基础库 */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -272,15 +272,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22B5FF8B2182E26A00AFA24B /* 基本交互 */ = {
+		22B5FF8B2182E26A00AFA24B /* 基础库 */ = {
 			isa = PBXGroup;
 			children = (
-				22B5FF972182E2B900AFA24B /* libcoreSupport.a */,
-				22B5FF942182E2B800AFA24B /* liblibPDRCore.a */,
-				22B5FF952182E2B800AFA24B /* liblibPGInvocation.a */,
-				22B5FF962182E2B900AFA24B /* liblibUI.a */,
+				22B5FFE52182F14600AFA24B /* libcoreSupport.a */,
+				22B5FFE62182F14600AFA24B /* liblibPDRCore.a */,
+				22B5FFE72182F14600AFA24B /* liblibPGInvocation.a */,
+				22B5FFE82182F14600AFA24B /* liblibUI.a */,
 			);
-			path = "基本交互";
+			path = "基础库";
 			sourceTree = "<group>";
 		};
 		22B5FF9D2182E55C00AFA24B /* UI */ = {
@@ -545,6 +545,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PZXD4J23YL;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/地理定位",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MUI-WebView-Demo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -562,6 +566,9 @@
 					"$(PROJECT_DIR)/lib/音频录制-播放",
 					"$(PROJECT_DIR)/lib/二维码扫描",
 					"$(PROJECT_DIR)/lib/拍照-录像",
+					"$(PROJECT_DIR)/lib/基础库",
+					"$(PROJECT_DIR)/lib/地理定位",
+					"$(PROJECT_DIR)/lib/消息通讯",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
@@ -579,6 +586,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PZXD4J23YL;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/地理定位",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MUI-WebView-Demo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +607,9 @@
 					"$(PROJECT_DIR)/lib/音频录制-播放",
 					"$(PROJECT_DIR)/lib/二维码扫描",
 					"$(PROJECT_DIR)/lib/拍照-录像",
+					"$(PROJECT_DIR)/lib/基础库",
+					"$(PROJECT_DIR)/lib/地理定位",
+					"$(PROJECT_DIR)/lib/消息通讯",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;

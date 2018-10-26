@@ -51,15 +51,15 @@
     
     [self addRowWithTitle:@"系统事件" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/events.html"] staticLib:@[] systemLib:@[]];
     
-    [self addRowWithTitle:@"文件系统" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/file.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"文件系统" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/file.html"] staticLib:@[@"liblibIO.a"] systemLib:@[]];
     
-    [self addRowWithTitle:@"系统相册" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/gallery.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"系统相册" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/gallery.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
     
     [self addRowWithTitle:@"地理定位" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/geolocation.html"] staticLib:@[] systemLib:@[]];
     [self addRowWithTitle:@"地图" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/maps.html"] staticLib:@[] systemLib:@[]];
-    [self addRowWithTitle:@"消息通讯" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/message.html"] staticLib:@[] systemLib:@[]];
-    [self addRowWithTitle:@"原生对象" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeobj.html"] staticLib:@[] systemLib:@[]];
-    [self addRowWithTitle:@"原生界面" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeui.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"消息通讯" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/message.html"] staticLib:@[@"liblibMessage.a"] systemLib:@[@"MessageUI.framework"]];
+    [self addRowWithTitle:@"原生对象" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeobj.html"] staticLib:@[@"liblibNativeUI.a"] systemLib:@[]];
+    [self addRowWithTitle:@"原生界面" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/nativeui.html"] staticLib:@[@"liblibNativeUI.a"] systemLib:@[]];
     [self addRowWithTitle:@"浏览器环境" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/navigator.html"] staticLib:@[] systemLib:@[]];
     [self addRowWithTitle:@"授权登陆认证" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/downloader.html"] staticLib:@[] systemLib:@[]];
     [self addRowWithTitle:@"方向传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/orientation.html"] staticLib:@[] systemLib:@[]];
