@@ -40,7 +40,6 @@
 		22B50103218316AE00AFA24B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B500F82183168B00AFA24B /* MediaPlayer.framework */; };
 		22B50104218316AE00AFA24B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B500FA2183168B00AFA24B /* WebKit.framework */; };
 		22B50107218317D800AFA24B /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B50106218317D800AFA24B /* liblibNativeUI.a */; };
-		22B5010B218318B200AFA24B /* liblibBarcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B50109218318B200AFA24B /* liblibBarcode.a */; };
 		22B5010E218318D200AFA24B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5010D218318D200AFA24B /* CoreMedia.framework */; };
 		22B50110218318D800AFA24B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5010F218318D800AFA24B /* AVFoundation.framework */; };
 		22B5FF372182B4DD00AFA24B /* RowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B5FF362182B4DD00AFA24B /* RowModel.m */; };
@@ -115,7 +114,6 @@
 		22B500FA2183168B00AFA24B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		22B500FB2183168B00AFA24B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		22B50106218317D800AFA24B /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeUI.a; sourceTree = "<group>"; };
-		22B50109218318B200AFA24B /* liblibBarcode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibBarcode.a; sourceTree = "<group>"; };
 		22B5010D218318D200AFA24B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		22B5010F218318D800AFA24B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		22B5FF352182B4DD00AFA24B /* RowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RowModel.h; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				22B500FC218316AE00AFA24B /* libc++.tbd in Frameworks */,
 				22B500FD218316AE00AFA24B /* StoreKit.framework in Frameworks */,
 				22B500FE218316AE00AFA24B /* QuickLook.framework in Frameworks */,
-				22B5010B218318B200AFA24B /* liblibBarcode.a in Frameworks */,
 				22B500FF218316AE00AFA24B /* AudioToolbox.framework in Frameworks */,
 				22B50107218317D800AFA24B /* liblibNativeUI.a in Frameworks */,
 				22B50100218316AE00AFA24B /* CoreTelephony.framework in Frameworks */,
@@ -167,7 +164,6 @@
 		2232BBCE218155D3003EFD77 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				22B50108218318B200AFA24B /* 二维码扫描 */,
 				22B50105218317D800AFA24B /* NativeUI组件 */,
 				22B5FF8B2182E26A00AFA24B /* 基础库 */,
 			);
@@ -302,14 +298,6 @@
 				22B50106218317D800AFA24B /* liblibNativeUI.a */,
 			);
 			path = "NativeUI组件";
-			sourceTree = "<group>";
-		};
-		22B50108218318B200AFA24B /* 二维码扫描 */ = {
-			isa = PBXGroup;
-			children = (
-				22B50109218318B200AFA24B /* liblibBarcode.a */,
-			);
-			path = "二维码扫描";
 			sourceTree = "<group>";
 		};
 		22B5FF8B2182E26A00AFA24B /* 基础库 */ = {
