@@ -87,7 +87,7 @@
     
 //    [self addRowWithTitle:@"本地数据存储" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/storage.html"] staticLib:@[@"liblibStorage.a", @"storage.framework"] systemLib:@[]];
     
-    [self addRowWithTitle:@"上传管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/uploader.html"] staticLib:@[@"liblibNativeUI.a", @"liblibStorage.a", @"liblibCamera.a", @"storage.framework", @"CoreLocation.framework", @"Photos.framework", @"AssetsLibrary.framework", @"AVFoundation.framework"] systemLib:@[@"CoreMedia.framework"]];
+    [self addRowWithTitle:@"上传管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/uploader.html"] staticLib:@[@"liblibNativeUI.a", @"liblibStorage.a", @"liblibCamera.a"] systemLib:@[@"CoreMedia.framework", @"storage.framework", @"CoreLocation.framework", @"Photos.framework", @"AssetsLibrary.framework", @"AVFoundation.framework"]];
     
 //    [self addRowWithTitle:@"视频多媒体" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/video.html"] staticLib:@[] systemLib:@[]];
     
