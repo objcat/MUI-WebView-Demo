@@ -39,9 +39,6 @@
 		22B50102218316AE00AFA24B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B500F72183168A00AFA24B /* JavaScriptCore.framework */; };
 		22B50103218316AE00AFA24B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B500F82183168B00AFA24B /* MediaPlayer.framework */; };
 		22B50104218316AE00AFA24B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B500FA2183168B00AFA24B /* WebKit.framework */; };
-		22B50107218317D800AFA24B /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B50106218317D800AFA24B /* liblibNativeUI.a */; };
-		22B5010E218318D200AFA24B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5010D218318D200AFA24B /* CoreMedia.framework */; };
-		22B50110218318D800AFA24B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5010F218318D800AFA24B /* AVFoundation.framework */; };
 		22B5FF372182B4DD00AFA24B /* RowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B5FF362182B4DD00AFA24B /* RowModel.m */; };
 		22B5FF3B2182B57900AFA24B /* RowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B5FF392182B57900AFA24B /* RowTableViewCell.m */; };
 		22B5FF3C2182B57900AFA24B /* RowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B5FF3A2182B57900AFA24B /* RowTableViewCell.xib */; };
@@ -113,9 +110,6 @@
 		22B500F92183168B00AFA24B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		22B500FA2183168B00AFA24B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		22B500FB2183168B00AFA24B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		22B50106218317D800AFA24B /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeUI.a; sourceTree = "<group>"; };
-		22B5010D218318D200AFA24B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		22B5010F218318D800AFA24B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		22B5FF352182B4DD00AFA24B /* RowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RowModel.h; sourceTree = "<group>"; };
 		22B5FF362182B4DD00AFA24B /* RowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RowModel.m; sourceTree = "<group>"; };
 		22B5FF382182B57900AFA24B /* RowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RowTableViewCell.h; sourceTree = "<group>"; };
@@ -139,8 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B50110218318D800AFA24B /* AVFoundation.framework in Frameworks */,
-				22B5010E218318D200AFA24B /* CoreMedia.framework in Frameworks */,
 				22B5FFEA2182F14600AFA24B /* liblibPDRCore.a in Frameworks */,
 				22B5FFE92182F14600AFA24B /* libcoreSupport.a in Frameworks */,
 				22B5FFEC2182F14600AFA24B /* liblibUI.a in Frameworks */,
@@ -149,7 +141,6 @@
 				22B500FD218316AE00AFA24B /* StoreKit.framework in Frameworks */,
 				22B500FE218316AE00AFA24B /* QuickLook.framework in Frameworks */,
 				22B500FF218316AE00AFA24B /* AudioToolbox.framework in Frameworks */,
-				22B50107218317D800AFA24B /* liblibNativeUI.a in Frameworks */,
 				22B50100218316AE00AFA24B /* CoreTelephony.framework in Frameworks */,
 				22B50101218316AE00AFA24B /* MobileCoreServices.framework in Frameworks */,
 				22B50102218316AE00AFA24B /* JavaScriptCore.framework in Frameworks */,
@@ -164,7 +155,6 @@
 		2232BBCE218155D3003EFD77 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				22B50105218317D800AFA24B /* NativeUI组件 */,
 				22B5FF8B2182E26A00AFA24B /* 基础库 */,
 			);
 			path = lib;
@@ -269,8 +259,6 @@
 		22AD4B00217DC250000950C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22B5010F218318D800AFA24B /* AVFoundation.framework */,
-				22B5010D218318D200AFA24B /* CoreMedia.framework */,
 				22B500F22183168200AFA24B /* 基础库 */,
 			);
 			name = Frameworks;
@@ -290,14 +278,6 @@
 				22B500FA2183168B00AFA24B /* WebKit.framework */,
 			);
 			name = "基础库";
-			sourceTree = "<group>";
-		};
-		22B50105218317D800AFA24B /* NativeUI组件 */ = {
-			isa = PBXGroup;
-			children = (
-				22B50106218317D800AFA24B /* liblibNativeUI.a */,
-			);
-			path = "NativeUI组件";
 			sourceTree = "<group>";
 		};
 		22B5FF8B2182E26A00AFA24B /* 基础库 */ = {

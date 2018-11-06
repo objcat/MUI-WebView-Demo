@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString *location;
 @property (strong, nonatomic) NSArray *staticLib;
 @property (strong, nonatomic) NSArray *systemLib;
+@property (strong, nonatomic) NSArray *privacys;
 @property (assign, nonatomic) BOOL open;
 @end
 

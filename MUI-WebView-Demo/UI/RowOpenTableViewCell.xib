@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="167" id="e0U-MF-vBg" customClass="RowOpenTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="e0U-MF-vBg" customClass="RowOpenTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0U-MF-vBg" id="qqh-6D-ws2">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="166.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="273.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2Q-9C-1Dd">
@@ -59,6 +59,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="权限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5E-tl-Jl8">
+                        <rect key="frame" x="10" y="148.5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-Pt-Rfp">
+                        <rect key="frame" x="10" y="175.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="aVf-Co-5VH" firstAttribute="top" secondItem="RXz-D8-gqf" secondAttribute="bottom" constant="10" id="DQH-zZ-Pf9"/>
@@ -66,23 +78,28 @@
                     <constraint firstItem="RXz-D8-gqf" firstAttribute="top" secondItem="CMq-nN-esD" secondAttribute="bottom" constant="10" id="J7H-8y-ETh"/>
                     <constraint firstItem="CMq-nN-esD" firstAttribute="leading" secondItem="U2Q-9C-1Dd" secondAttribute="leading" id="L3b-gv-Cea"/>
                     <constraint firstItem="aVf-Co-5VH" firstAttribute="leading" secondItem="RXz-D8-gqf" secondAttribute="leading" id="LPf-dv-0fx"/>
+                    <constraint firstItem="w5E-tl-Jl8" firstAttribute="top" secondItem="BgY-wB-X3B" secondAttribute="bottom" constant="10" id="MY4-ro-4cd"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZIp-Pt-Rfp" secondAttribute="bottom" constant="10" id="Nai-QU-VB7"/>
                     <constraint firstItem="1u3-gJ-HRQ" firstAttribute="top" secondItem="qqh-6D-ws2" secondAttribute="top" id="NuI-Vg-GNk"/>
                     <constraint firstItem="CMq-nN-esD" firstAttribute="top" secondItem="U2Q-9C-1Dd" secondAttribute="bottom" constant="10" id="UsL-JI-Eac"/>
                     <constraint firstAttribute="trailing" secondItem="1u3-gJ-HRQ" secondAttribute="trailing" id="fQf-fs-HmO"/>
                     <constraint firstItem="1u3-gJ-HRQ" firstAttribute="centerY" secondItem="U2Q-9C-1Dd" secondAttribute="centerY" id="hg6-EV-EMh"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BgY-wB-X3B" secondAttribute="bottom" constant="10" id="i7G-AW-2rG"/>
                     <constraint firstItem="U2Q-9C-1Dd" firstAttribute="leading" secondItem="qqh-6D-ws2" secondAttribute="leading" constant="10" id="iSg-iL-ukA"/>
+                    <constraint firstItem="ZIp-Pt-Rfp" firstAttribute="leading" secondItem="w5E-tl-Jl8" secondAttribute="leading" id="lDI-EO-5iz"/>
                     <constraint firstAttribute="trailing" secondItem="RXz-D8-gqf" secondAttribute="trailing" constant="10" id="mWD-nO-qnW"/>
                     <constraint firstItem="RXz-D8-gqf" firstAttribute="leading" secondItem="CMq-nN-esD" secondAttribute="leading" id="oA6-jQ-Esd"/>
                     <constraint firstItem="BgY-wB-X3B" firstAttribute="leading" secondItem="aVf-Co-5VH" secondAttribute="leading" id="oUh-qi-iZg"/>
+                    <constraint firstItem="w5E-tl-Jl8" firstAttribute="leading" secondItem="BgY-wB-X3B" secondAttribute="leading" id="rxI-HN-o6z"/>
+                    <constraint firstItem="ZIp-Pt-Rfp" firstAttribute="top" secondItem="w5E-tl-Jl8" secondAttribute="bottom" constant="10" id="yL3-6o-HAm"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="privacyLabel" destination="ZIp-Pt-Rfp" id="zLd-lF-KFS"/>
                 <outlet property="staticLibLabel" destination="RXz-D8-gqf" id="4d6-mE-mpd"/>
                 <outlet property="systemLibLabel" destination="BgY-wB-X3B" id="zhc-6a-YOb"/>
                 <outlet property="titleLabel" destination="U2Q-9C-1Dd" id="v1w-au-gG9"/>
             </connections>
-            <point key="canvasLocation" x="105.59999999999999" y="201.94902548725639"/>
+            <point key="canvasLocation" x="-67.200000000000003" y="74.662668665667169"/>
         </tableViewCell>
     </objects>
     <resources>

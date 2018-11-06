@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *staticLibLabel;
 @property (weak, nonatomic) IBOutlet UILabel *systemLibLabel;
+@property (weak, nonatomic) IBOutlet UILabel *privacyLabel;
 @end
 
 @implementation RowOpenTableViewCell
@@ -21,6 +22,7 @@
     self.titleLabel.text = model.title;
     self.staticLibLabel.text = [self libFromArray:model.staticLib];
     self.systemLibLabel.text = [self libFromArray:model.systemLib];
+    self.privacyLabel.text = [self libFromArray:model.privacys];
 }
 
 - (NSString *)libFromArray:(NSArray *)array {

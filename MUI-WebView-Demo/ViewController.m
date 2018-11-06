@@ -39,11 +39,11 @@
     
     [self addRowWithTitle:@"加速度传感器" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/accelerometer.html"] staticLib:@[@"liblibAccelerometer.a"] systemLib:@[]];
     
-    [self addRowWithTitle:@"音频录制/播放" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/audio.html"] staticLib:@[@"liblibMedia.a", @"libopencore-amrnb.a", @"libmp3lame.a", @"liblibIO.a"] systemLib:@[@"AVFoundation.framework"]];
+    [self addRowWithTitle:@"音频录制/播放" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/audio.html"] staticLib:@[@"liblibMedia.a", @"libopencore-amrnb.a", @"libmp3lame.a", @"liblibIO.a"] systemLib:@[@"AVFoundation.framework"] privacys:@[]];
     
     [self addRowWithTitle:@"二维码扫描" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/barcode_scan.html"] staticLib:@[@"liblibBarcode.a", @"liblibNativeUI.a"] systemLib:@[@"AVFoundation.framework", @"CoreMedia.framework"]];
     
-    [self addRowWithTitle:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
+    [self addRowWithTitle:@"拍照/录像" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/camera.html"] staticLib:@[@"liblibCamera.a", @"liblibIO.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"] privacys:@[@"Privacy - Camera Usage Description", @"Privacy - Microphone Usage Description"]];
     
     [self addRowWithTitle:@"获取设备信息" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/device.html"] staticLib:@[] systemLib:@[]];
     
@@ -53,9 +53,9 @@
     
     [self addRowWithTitle:@"文件系统" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/file.html"] staticLib:@[@"liblibIO.a"] systemLib:@[]];
     
-    [self addRowWithTitle:@"系统相册" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/gallery.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"]];
+    [self addRowWithTitle:@"系统相册" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/gallery.html"] staticLib:@[@"liblibCamera.a"] systemLib:@[@"AVFoundation.framework", @"AssetsLibrary.framework", @"Photos.framework", @"CoreLocation.framework", @"CoreMedia.framework"] privacys:@[@"Privacy - Photo Library Usage Description"]];
     
-    [self addRowWithTitle:@"地理定位" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/geolocation.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"地理定位" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/geolocation.html"] staticLib:@[@"liblibGeolocation.a", @"libBaiduKeyVerify.a", @"libssl.a", @"libcrypto.a", @"BaiduMapAPI_Base.framework", @"BaiduMapAPI_Location.framework", @"BaiduMapAPI_Search.framework", @"BaiduMapAPI_Utils.framework"] systemLib:@[@"libsqlite3.0.tbd", @"CoreLocation.framework"] privacys:@[@"Privacy - Location When In Use Usage Description"]];
     
     [self addRowWithTitle:@"地图" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/maps.html"] staticLib:@[] systemLib:@[]];
     
@@ -119,6 +119,20 @@
     model.url = url;
     model.staticLib = staticLib;
     model.systemLib = systemLib;
+    [self.arr addObject:model];
+    
+    if (model == self.arr[0]) {
+        model.open = YES;
+    }
+}
+
+- (void)addRowWithTitle:(NSString *)title url:(NSString *)url  staticLib:(NSArray *)staticLib systemLib:(NSArray *)systemLib privacys:(NSArray *)privacys {
+    RowModel *model = [[RowModel alloc] init];
+    model.title = title;
+    model.url = url;
+    model.staticLib = staticLib;
+    model.systemLib = systemLib;
+    model.privacys = privacys;
     [self.arr addObject:model];
     
     if (model == self.arr[0]) {
