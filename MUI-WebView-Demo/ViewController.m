@@ -49,7 +49,7 @@
     
     [self addRowWithTitle:@"下载管理" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/downloader.html"] staticLib:@[] systemLib:@[]];
     
-    [self addRowWithTitle:@"系统事件" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/events.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"系统事件" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/events.html"] staticLib:@[@"- (void)applicationDidEnterBackground:(UIApplication *)application", @"applicationWillEnterForeground:(UIApplication *)application"] systemLib:@[]];
     
     [self addRowWithTitle:@"文件系统" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/file.html"] staticLib:@[@"liblibIO.a"] systemLib:@[]];
     
@@ -57,7 +57,7 @@
     
     [self addRowWithTitle:@"地理定位" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/geolocation.html"] staticLib:@[@"liblibGeolocation.a", @"libBaiduKeyVerify.a", @"libssl.a", @"libcrypto.a", @"BaiduMapAPI_Base.framework", @"BaiduMapAPI_Location.framework", @"BaiduMapAPI_Search.framework", @"BaiduMapAPI_Utils.framework"] systemLib:@[@"libsqlite3.0.tbd", @"CoreLocation.framework"] privacys:@[@"Privacy - Location When In Use Usage Description"]];
     
-    [self addRowWithTitle:@"地图" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/maps.html"] staticLib:@[] systemLib:@[]];
+    [self addRowWithTitle:@"地图" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/maps.html"] staticLib:@[@"liblibMap.a", @"libbmapimp.a" , @"libBaiduKeyVerify.a", @"libssl.a", @"libcrypto.a", @"BaiduMapAPI_Base.framework", @"BaiduMapAPI_Location.framework", @"BaiduMapAPI_Search.framework", @"BaiduMapAPI_Utils.framework"] systemLib:@[@"libsqlite3.0.tbd", @"MapKit.framework"] privacys:@[@"地图组件不推荐使用 写的很垃圾 libbmapimp 强行跟百度地图关联 导致简单的openURL都要导入百度的sdk"]];
     
     [self addRowWithTitle:@"消息通讯" url:[NSString stringWithFormat:@"file://%@/%@", path, @"Pandora/apps/HelloH5/www/plus/message.html"] staticLib:@[@"liblibMessage.a"] systemLib:@[@"MessageUI.framework"]];
     
@@ -103,7 +103,9 @@
 - (void)createTableView {
     self.navigationItem.title = @"h5+web";
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     self.navigationController.navigationBar.translucent = NO;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.estimatedRowHeight = 200;

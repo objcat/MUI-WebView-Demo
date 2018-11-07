@@ -51,6 +51,13 @@
 		22B5FFEA2182F14600AFA24B /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE62182F14600AFA24B /* liblibPDRCore.a */; };
 		22B5FFEB2182F14600AFA24B /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE72182F14600AFA24B /* liblibPGInvocation.a */; };
 		22B5FFEC2182F14600AFA24B /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5FFE82182F14600AFA24B /* liblibUI.a */; };
+		22BD63DD2192D8C700C6227C /* liblibPayment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63DA2192D8C700C6227C /* liblibPayment.a */; };
+		22BD63DE2192D8C700C6227C /* libalixpayment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63DB2192D8C700C6227C /* libalixpayment.a */; };
+		22BD63DF2192D8C700C6227C /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63DC2192D8C700C6227C /* AlipaySDK.framework */; };
+		22BD63E12192D8F500C6227C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63E02192D8F500C6227C /* CoreMotion.framework */; };
+		22BD63E42192D91100C6227C /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63E32192D91100C6227C /* liblibNativeUI.a */; };
+		22BD63E72192E22600C6227C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63E52192E22600C6227C /* libssl.a */; };
+		22BD63E82192E22600C6227C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BD63E62192E22600C6227C /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +133,13 @@
 		22B5FFE62182F14600AFA24B /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
 		22B5FFE72182F14600AFA24B /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPGInvocation.a; sourceTree = "<group>"; };
 		22B5FFE82182F14600AFA24B /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
+		22BD63DA2192D8C700C6227C /* liblibPayment.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPayment.a; sourceTree = "<group>"; };
+		22BD63DB2192D8C700C6227C /* libalixpayment.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libalixpayment.a; sourceTree = "<group>"; };
+		22BD63DC2192D8C700C6227C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		22BD63E02192D8F500C6227C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		22BD63E32192D91100C6227C /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeUI.a; sourceTree = "<group>"; };
+		22BD63E52192E22600C6227C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "地图-定位/libssl.a"; sourceTree = "<group>"; };
+		22BD63E62192E22600C6227C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "地图-定位/libcrypto.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,19 +147,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BD63E12192D8F500C6227C /* CoreMotion.framework in Frameworks */,
 				22B5FFEA2182F14600AFA24B /* liblibPDRCore.a in Frameworks */,
 				22B5FFE92182F14600AFA24B /* libcoreSupport.a in Frameworks */,
 				22B5FFEC2182F14600AFA24B /* liblibUI.a in Frameworks */,
 				22B5FFEB2182F14600AFA24B /* liblibPGInvocation.a in Frameworks */,
 				22B500FC218316AE00AFA24B /* libc++.tbd in Frameworks */,
+				22BD63E82192E22600C6227C /* libcrypto.a in Frameworks */,
 				22B500FD218316AE00AFA24B /* StoreKit.framework in Frameworks */,
 				22B500FE218316AE00AFA24B /* QuickLook.framework in Frameworks */,
 				22B500FF218316AE00AFA24B /* AudioToolbox.framework in Frameworks */,
+				22BD63DD2192D8C700C6227C /* liblibPayment.a in Frameworks */,
+				22BD63DE2192D8C700C6227C /* libalixpayment.a in Frameworks */,
 				22B50100218316AE00AFA24B /* CoreTelephony.framework in Frameworks */,
 				22B50101218316AE00AFA24B /* MobileCoreServices.framework in Frameworks */,
 				22B50102218316AE00AFA24B /* JavaScriptCore.framework in Frameworks */,
 				22B50103218316AE00AFA24B /* MediaPlayer.framework in Frameworks */,
 				22B50104218316AE00AFA24B /* WebKit.framework in Frameworks */,
+				22BD63E42192D91100C6227C /* liblibNativeUI.a in Frameworks */,
+				22BD63E72192E22600C6227C /* libssl.a in Frameworks */,
+				22BD63DF2192D8C700C6227C /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +176,10 @@
 		2232BBCE218155D3003EFD77 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				22BD63E62192E22600C6227C /* libcrypto.a */,
+				22BD63E52192E22600C6227C /* libssl.a */,
+				22BD63E22192D91100C6227C /* NativeUI组件 */,
+				22BD63D92192D8C700C6227C /* 支付 */,
 				22B5FF8B2182E26A00AFA24B /* 基础库 */,
 			);
 			path = lib;
@@ -259,6 +284,7 @@
 		22AD4B00217DC250000950C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22BD63E02192D8F500C6227C /* CoreMotion.framework */,
 				22B500F22183168200AFA24B /* 基础库 */,
 			);
 			name = Frameworks;
@@ -308,6 +334,24 @@
 				22B5FF4D2182D5F300AFA24B /* BaseTableViewCell.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		22BD63D92192D8C700C6227C /* 支付 */ = {
+			isa = PBXGroup;
+			children = (
+				22BD63DA2192D8C700C6227C /* liblibPayment.a */,
+				22BD63DB2192D8C700C6227C /* libalixpayment.a */,
+				22BD63DC2192D8C700C6227C /* AlipaySDK.framework */,
+			);
+			path = "支付";
+			sourceTree = "<group>";
+		};
+		22BD63E22192D91100C6227C /* NativeUI组件 */ = {
+			isa = PBXGroup;
+			children = (
+				22BD63E32192D91100C6227C /* liblibNativeUI.a */,
+			);
+			path = "NativeUI组件";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,6 +630,7 @@
 					"$(PROJECT_DIR)/lib/本地数据存储",
 					"$(PROJECT_DIR)/lib/文件压缩解压",
 					"$(PROJECT_DIR)/lib/NativeUI组件",
+					"$(PROJECT_DIR)/lib/地图-定位",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
@@ -636,6 +681,7 @@
 					"$(PROJECT_DIR)/lib/本地数据存储",
 					"$(PROJECT_DIR)/lib/文件压缩解压",
 					"$(PROJECT_DIR)/lib/NativeUI组件",
+					"$(PROJECT_DIR)/lib/地图-定位",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lszp.test;
